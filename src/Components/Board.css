@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.containerBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 200px); /* Definindo 3 colunas com 100 pixels cada */
+    grid-template-rows: repeat(3, 200px); /* Definindo 3 linhas com 100 pixels cada */
+    gap: 10px; /* Espaçamento entre as células */
+    justify-content: center; /* Centralizando o grid horizontalmente */
+    align-items: center; /* Centralizando o grid verticalmente */
+  }
+  
+  .positionBoard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black; /* Adicionando uma borda para separar visualmente as células */
+    cursor: pointer;
+    border-radius: 8px;
+  }
